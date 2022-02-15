@@ -8,7 +8,7 @@ document.body.addEventListener('click', (e) => {
 function makeGrid(s) {
     changeStatus('DRAW')
     let show = document.querySelector('.show')
-    show.innerText = `Size:${s} X ${s}`
+    show.innerText = `Size: ${s} X ${s}`
     let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
     squares.forEach((div) => div.remove());
