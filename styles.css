@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 68, 148);
+}
+
+body {
+    background-color: rgb(157, 180, 173);
+}
+
+h1 {
+    text-align: center;
+    margin: -4px 0 -4px 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.show {
+    font-size: large;
+}
+
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.board>div {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.rangeslider {
+    width: 100%;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+footer {
+    text-align: center;
+}

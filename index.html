@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1>ETCH A SKETCH</h1>
+    <div class="rangeslider">
+        <input type="range" min="4" max="100" value="16" step="4" id="sliderRange" onchange="makeGrid(this.value)">
+        <div class="show">Size:16 X 16</div>
+    </div>
+    <div class="board-wrapper">
+        <div class="board"></div>
+    </div>
+    <div class="button-container">
+        <button id="reset" onclick="reset()">Reset</button>
+        <button id="eraser" onclick="changeColor('white')">Eraser</button>
+        <button id="draw" onclick="changeColor('black')">Draw</button>
+        <button id="rainbow" onclick="changeColor('rainbow')">Rainbow</button>
+    </div>
+    <h3>CURRENT MODE: <span id="status">DRAW</span></h3>
+    <footer>Made by
+        <a href="https://github.com/yashtalwarr"><i class="fa fa-github"style="font-size:18px">Yash Talwar</i></a>
+        <p> This project is the part of <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project">The Odin Project</a>'s curriculum.
+        </p>
+    </footer>
+</body>
+
+</html>
