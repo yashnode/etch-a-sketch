@@ -6,7 +6,7 @@ document.body.addEventListener('click', (e) => {
 });
 
 function makeGrid(s) {
-    changeStatus('DRAW')
+    changeStatus('DRAW (click anywhere to change)')
     let show = document.querySelector('.show')
     show.innerText = `Size: ${s} X ${s}`
     let board = document.querySelector('.board');
@@ -35,7 +35,7 @@ function defaultColor() {
             this.style.backgroundColor = COLOR;
 
         } else if (COLOR === 'black') {
-            changeStatus('DRAW')
+            changeStatus('DRAW (click anywhere to change)')
             this.style.backgroundColor = COLOR;
 
         }
@@ -47,7 +47,7 @@ function changeColor(choice) {
 }
 
 function reset() {
-    changeStatus('DRAW')
+    changeStatus('DRAW (click anywhere to change)')
     let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
     squares.forEach((div) => div.style.backgroundColor = 'white');
